@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  size: 100px;
+}
+#quote {  
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+#about {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+#choose{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+#why {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+
+}
+#div1  {
+  align-content: right;
+  
+}
+#choose{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+#why {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+#signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  width: 100%; /* Full screen width */
+  background-color: #f9f9f9; /* Optional background */
+}
+
+#form {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+#signin {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#div2 {
+  margin-bottom: 15px;
+}
+
+#label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+#div3 {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#rememberMe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #f90;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+#signin2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100%;
+  background-color: #f9f9f9; 
+}
+
+#form2 {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+#signup2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#div22 {
+  margin-bottom: 15px;
+}
+
+#label1 {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+#div22 {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#rememberMe2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#submit1 {
+  width: 100%;
+  padding: 10px;
+  background-color: #f90;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+#chef {
+  width: 1320px;
+  height: 1386px;
+  top: 530px;
+  left: 300px;
+}
+#chefl {
+  width: 312px;
+  height: 446px;
+  top: 530px;
+  left: 300px;
+}
+#chefimg {
+  width: 312px;
+  height: 379.17px
+  
+}
+
+/* Base styles for mobile devices */
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1rem;
+}
+
+/* Styles for tablets and larger screens */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+}
+
+/* Styles for desktops */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.item {
+  flex: 1 1 calc(100% - 1rem); /* 1 column on mobile */
+}
+
+@media (min-width: 768px) {
+  .item {
+    flex: 1 1 calc(50% - 1rem); /* 2 columns on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .item {
+    flex: 1 1 calc(25% - 1rem); /* 4 columns on desktops */
+  }
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
